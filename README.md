@@ -245,7 +245,7 @@ All four tests pass and show some of the possibilities.
 New matchers can be added directly to the `expect.matchers` object. They consist of an object with at the very least
 the test function `fun`. For example:
 
-`expect.matchers["toBeWithin"] = { fun: (exp,range) =`>` exp `>` range[0] `&&` exp `<` range[1] }`
+`expect.matchers["toBeWithin"] = { fun: (exp,range) => exp > range[0] && exp < range[1] }`
 
     expect("add(1,3)").toBeWithin("[2.5,5]");
     expect("add(1,3)").toBeWithin("[12.5,25]"); // Fails
