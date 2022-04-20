@@ -52,7 +52,7 @@ In the browser do:
 
 and `expect` will be available after that.
 
-Both in the NodeJS and in the browser, you must of course first determine and then use the correct path to the CentiTS file!
+Both in NodeJS and in the browser, you must of course first determine and then use the correct path to the CentiTS file!
 
 Output will be sent to the console by default. When using CentiTS in the browser, report output can be redirected to the webpage with a bridging function (see below and the 'index.html' file in the root for an example).
 
