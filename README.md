@@ -1,6 +1,9 @@
 CentiTF (Centi Testing Framework)
 =================================
 
+Centi Test Framework: Very small but powerful JavaScript unit test framework
+----------------------------------------------------------------------------
+
 Jaap Murre, 2022, jaap@murre.com
 
 Version: 1.0
