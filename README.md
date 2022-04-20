@@ -96,7 +96,7 @@ which gives:
     PASS  Expect subtract 1 from 2 to equal -1
 
 The philosophy of CentiTF, however, is to make use of test code *strings* as much as possible for the generation of test results.
-Hence, we rely on `eval()` and the global scoe to interpret code and use the `eval`'d code strings for output messages.
+Hence, we rely on `eval()` and the global scope to interpret code and use the `eval`'d code strings for output messages.
 
 If desired, it is possible to add a message also to a string-based test, which is then shown above in the output:
 
