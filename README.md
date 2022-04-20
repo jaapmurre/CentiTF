@@ -261,7 +261,7 @@ Because we chose to provide the arguments to the assertion as an array, this mat
 
 We can rewrite the matcher and use an object instead:
 
-`expect.matchers["toBeWithin"] = { fun: (exp,assertion) =`>` exp `>` assertion.min `&&` exp `<` assertion.max }`
+`expect.matchers["toBeWithin"] = { fun: (exp,assertion) => exp > assertion.min && exp < assertion.max }`
 
     expect("[13,14,15,16]").contents.toBeWithin("({min:12.5,max:25})"); // Passes
 
