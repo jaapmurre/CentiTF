@@ -265,7 +265,7 @@ We can rewrite the matcher and use an object instead:
 
     expect("[13,14,15,16]").contents.toBeWithin("({min:12.5,max:25})"); // Passes
 
-A tricky point here is that whenever you specifiy an object literal, like here, to be `eval`'d, you must wrap it in round brackets, or else `eval()` will think it is a code block and choke. Another option is to use a string:
+A tricky point here is that whenever you specifiy an object literal like here to be `eval`'d, you must wrap it in round brackets, or else `eval()` will think it is a code block and choke. Another option is to use a string:
 
 `expect.matchers["toBeWithin"] = { fun: (exp,assertion) =`>` exp `>` assertion.split(',')[0] `&&` exp `<` assertion.split(',')[1] }`
 
